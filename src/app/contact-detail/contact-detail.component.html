@@ -1,0 +1,20 @@
+<section>
+    <main>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center"> Contact # {{contact.id}}</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <p>
+                  Name: {{contact.name}} 
+               </p>
+               <p>
+                  Email: {{contact.email}}
+               </p>
+               <a [routerLink]="['/contacts']" class="btn btn-primary">Back to contact lists</a> 
+              </div>
+        </div>
+    </main>
+</section>

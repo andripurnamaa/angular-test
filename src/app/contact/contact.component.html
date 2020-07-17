@@ -1,0 +1,29 @@
+<section id="titleTest">
+    <div class="row mt-3">
+      <div class="col-12">
+        <h2 class="text-center">Dummy Data</h2>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">E-Mail Address</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let contact of contacts">
+              <td>{{ contact.name }}</td>
+              <td>{{ contact.email }}</td>
+              <td><a [routerLink]="['/contact', contact.id]" class="btn btn-primary">Go to details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>  
+  </section>
